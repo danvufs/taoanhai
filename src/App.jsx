@@ -7,7 +7,7 @@ function App() {
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
   const [placeholder, setPlaceholder] = useState(
-    "Nhập mổ tả chi tiết cho bức ảnh bằng tiếng Anh: Ví dụ: A girl is riding a bike on a dirt path next to a lake."
+    "Nhập mổ tả chi tiết cho bức ảnh bằng tiếng Anh: Ví dụ: 3D render of a girl and a dog staring at the stars."
   );
   const configuration = new Configuration({
     apiKey: import.meta.env.VITE_Open_AI_Key,
