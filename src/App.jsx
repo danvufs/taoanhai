@@ -16,7 +16,7 @@ function App() {
   const openai = new OpenAIApi(configuration);
 
   const generateImage = async () => {
-    setPlaceholder(`Cho mình xin một ấm trà mạn nào!: "${prompt}"`);
+    setPlaceholder(`Nhớ cho mình xin một ấm trà mạn nhé! Đây là kết quả tạo ảnh của đoạn mô tả: "${prompt}"`);
     setLoading(true);
     const res = await openai.createImage({
       prompt: prompt,
