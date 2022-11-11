@@ -10,6 +10,10 @@
 
 h2 {
   font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: orange;
 }
 
 .app-main {

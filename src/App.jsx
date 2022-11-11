@@ -30,7 +30,7 @@ function App() {
     <div className="app-main">
       {loading ? (
         <>
-          <h2>Generating..Please Wait..</h2>
+          <h2>Đang tạo..Vui lòng đợi..</h2>
           <div class="lds-ripple">
             <div></div>
             <div></div>
@@ -38,7 +38,7 @@ function App() {
         </>
       ) : (
         <>
-          <h2>Tao anh</h2>
+          <h2>TẠO ẢNH BẰNG TRÍ TUỆ NHÂN TẠO</h2>
 
           <textarea
             className="app-input"
@@ -47,7 +47,7 @@ function App() {
             rows="10"
             cols="40"
           />
-          <button onClick={generateImage}>Generate an Image</button>
+          <button onClick={generateImage}>Ấn để tạo ảnh</button>
           {result.length > 0 ? (
             <img className="result-image" src={result} alt="result" />
           ) : (
