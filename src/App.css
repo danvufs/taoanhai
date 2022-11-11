@@ -6,6 +6,9 @@
   padding: 2rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
+  background-color: #52ACFF;
+  background-image: linear-gradient(90deg, #52ACFF 25%, #FFE32C 100%);
+
 }
 
 h2 {
@@ -25,7 +28,7 @@ h2 {
 .app-input {
   height: 35px;
   margin: 20px;
-  border: 2px solid black;
+  border: 2px solid #0fb4d4;
   padding: 10px;
   font-size: 14px;
   font-family: "Lato", sans-serif;

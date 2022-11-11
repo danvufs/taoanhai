@@ -7,7 +7,7 @@ function App() {
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
   const [placeholder, setPlaceholder] = useState(
-    "Search Bears with Paint Brushes the Starry Night, painted by Vincent Van Gogh.."
+    "Nhập mổ tả chi tiết cho bức ảnh: Ví dụ: Một bé gái và một con chó đang ngắm những vì sao"
   );
   const configuration = new Configuration({
     apiKey: import.meta.env.VITE_Open_AI_Key,
@@ -47,7 +47,7 @@ function App() {
             rows="10"
             cols="40"
           />
-          <button onClick={generateImage}>Ấn để tạo ảnh</button>
+          <button onClick={generateImage}>TẠO ẢNH</button>
           {result.length > 0 ? (
             <img className="result-image" src={result} alt="result" />
           ) : (
