@@ -16,7 +16,7 @@ function App() {
   const openai = new OpenAIApi(configuration);
 
   const generateImage = async () => {
-    setPlaceholder(`Nhớ cho mình xin một ấm trà mạn nhé! Đây là kết quả tạo ảnh của đoạn mô tả: "${prompt}"`);
+    setPlaceholder(`Nhớ cho mình xin một ấm trà mạn nhé! Give me a cup of tea please: "${prompt}"`);
     setLoading(true);
     const res = await openai.createImage({
       prompt: prompt,
@@ -30,7 +30,7 @@ function App() {
     <div className="app-main">
       {loading ? (
         <>
-          <h2>Đang tạo..Vui lòng đợi..</h2>
+          <h2>Đang tạo..Vui lòng đợi..(Please wait...)</h2>
           <div class="lds-ripple">
             <div></div>
             <div></div>
@@ -38,7 +38,7 @@ function App() {
         </>
       ) : (
         <>
-          <h2>TẠO ẢNH BẰNG TRÍ TUỆ NHÂN TẠO</h2>
+          <h2>TẠO ẢNH BẰNG TRÍ TUỆ NHÂN TẠO- AI ART GENERATOR</h2>
 
           <textarea
             className="app-input"
@@ -47,7 +47,7 @@ function App() {
             rows="10"
             cols="40"
           />
-          <button onClick={generateImage}>TẠO ẢNH</button>
+          <button onClick={generateImage}>TẠO ẢNH- GENERATE</button>
           {result.length > 0 ? (
             <img className="result-image" src={result} alt="result" />
           ) : (
