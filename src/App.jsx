@@ -27,7 +27,7 @@ function App() {
     setResult(res.data.data[0].url);
   };
   return (
-    <div className="app-main">
+    <><div className="app-main">
       {loading ? (
         <>
           <h2>Đang tạo..Vui lòng đợi..(Please wait...)</h2>
@@ -45,8 +45,7 @@ function App() {
             placeholder={placeholder}
             onChange={(e) => setPrompt(e.target.value)}
             rows="10"
-            cols="40"
-          />
+            cols="40" />
           <button onClick={generateImage}>TẠO ẢNH- GENERATE</button>
           {result.length > 0 ? (
             <img className="result-image" src={result} alt="result" />
@@ -56,6 +55,9 @@ function App() {
         </>
       )}
     </div>
+      <div className="save-image">
+        <button onClick={saveImage}>LƯU ẢNH- SAVE</button>
+      </div></>
   );
 }
 
